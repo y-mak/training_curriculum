@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+  <%= form_with model: @plan, url: calendars_path, class: 'form' do |f| %>
+    <%= f.label :日付を選択, class: 'lavel' %>
+    <%= f.date_field :date, class: 'date-select' %>
+    <%= f.label :予定を入力, class: 'lavel' %>
+    <%= f.text_field :plan, class: 'text-input' %>
+    <%= f.submit '保存' %>
+  <% end %>
+
+=======
 <%= form_with model: @plan, url: calendars_path, class: 'form' do |f| %>
   <%= f.label :日付を選択, class: 'lavel' %>
   <%= f.date_field :date, class: 'date-select' %>
@@ -24,6 +34,7 @@
 </div>
 
 <div>
+>>>>>>> 6b337e7f7acffa81340b47f6f4a54993a613e981
   <div class='calendar'>
     <% @week_days.each do |day| %>
       <div class='item'>
@@ -39,6 +50,10 @@
         </ul>
       </div>
     <% end %>
+<<<<<<< HEAD
+  </div>
+=======
   </div>
 </div>
 
+>>>>>>> 6b337e7f7acffa81340b47f6f4a54993a613e981
